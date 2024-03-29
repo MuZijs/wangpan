@@ -1,0 +1,26 @@
+
+/* 背景主色调 */
+.bg-main{
+	background-color: #009cff !important;
+}
+
+.bg-main-hover {
+	background-color: #51bbff !important;
+}
+
+.bg-main-disabled {
+	background-color: #51bbff !important;
+}
+
+/* 文字主色调 */
+.text-main{
+	color: #009cff !important;
+}
+
+.text-main-hover {
+	color: #51bbff !important;
+}
+
+.border-main {
+	border-color: #51bbff !important;
+}
