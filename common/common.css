@@ -24,3 +24,8 @@
 .border-main {
 	border-color: #51bbff !important;
 }
+
+/* 状态栏 */
+.status_bar {
+	height: var(--status-bar-height);
+}
