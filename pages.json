@@ -34,7 +34,7 @@
 			"path" : "pages/my/my",
 			"style" : 
 			{
-				"navigationBarTitleText" : "",
+				"navigationBarTitleText" : "个人中心",
 				"enablePullDownRefresh" : false
 			}
 		},

@@ -6,7 +6,7 @@
 				<text class="rounded" :class="tabIndex === index ? 'bg-main' : 'bg-white'" style="height: 8rpx;width: 30rpx"></text>
 			</view>
 		</view>
-		<swiper class="flex-1 flex" :duration="250">
+		<swiper class="flex-1 flex" :duration="250" :current="tabIndex" @change="changeTab($event.detail.current)">
 			<swiper-item class="flex-1 flex" v-for="(item, index) in tabBars" :key="index">
 				<scroll-view scroll-y="true"  class="flex-1">
 					<view class="flex align-center bg-light font-sm px-2 text-muted" style="height: 60rpx;">
