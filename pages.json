@@ -12,8 +12,22 @@
 			"path" : "pages/list/list",
 			"style" : 
 			{
-				"navigationBarTitleText" : "",
-				"enablePullDownRefresh" : false
+				"navigationBarTitleText" : "传输列表",
+				"enablePullDownRefresh" : false,
+				"app-plus": {
+					"titleNView": {
+						"buttons": [
+							{
+								"color": "#333333",
+								"colorPressed": "#009cff",
+								"float": "right",
+								"fontSize": "22px",
+								"fontSrc": "/static/iconfont.ttf",
+								"text": "\ue64a"
+							}
+						]
+					}
+				}
 			}
 		},
 		{
@@ -39,13 +53,29 @@
 				"navigationBarTitleText" : "",
 				"enablePullDownRefresh" : false
 			}
+		},
+		{
+			"path" : "components/common/f-dialog",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "pages/video/video",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh" : false
+			}
 		}
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "企业网盘",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+		"navigationBarBackgroundColor": "#ffffff",
+		"backgroundColor": "#ffffff"
 	},
 	"tabBar": {
 		"backgroundColor": "#ffffff",
