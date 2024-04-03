@@ -8,7 +8,7 @@
 			<input type="text" v-model="form.username" class="uni-input bg-light rounded mb-4" placeholder="手机号/用户名/邮箱"/>
 			<input type="safe-password" v-model="form.password" class="uni-input bg-light rounded mb-4" placeholder="密码"/>
 			<input v-if="type === 'register'" type="safe-password" v-model="form.repassword" class="uni-input bg-light rounded mb-4" placeholder="确认密码"/>
-			<view class="flex align-center justify-center bg-main text-white py-2 rounded-circle font-md" hover-class="bg-main-hover">
+			<view class="flex align-center justify-center bg-main text-white py-2 rounded-circle font-md" hover-class="bg-main-hover" @click="submit">
 				{{type === 'login' ? '登录' : '注册'}}
 			</view>
 			<view class="flex align-center justify-center pt-5">
@@ -39,6 +39,16 @@
 				} else {
 					this.type = 'login'
 				}
+			},
+			submit() {
+				// 请求服务器
+				uni.showToast({
+					title: '登录成功',
+					icon:'none'
+				});
+				uni.switchTab({
+					url:'/pages/index/index'
+				})
 			}
 		}
 	}

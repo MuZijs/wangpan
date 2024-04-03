@@ -19,7 +19,9 @@
 			</view>
 		</view>
 		<view class="bg-light" style="height: 20rpx;"></view>
-		<uni-list-item title="其他设置" show-arrow :border="false" clickable></uni-list-item>
+		<navigator url="/pages/setting/setting">
+			<uni-list-item title="其他设置" show-arrow :border="false" clickable></uni-list-item>
+		</navigator>
 	</view>
 </template>
 
